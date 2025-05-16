@@ -7,8 +7,8 @@
  */
 
 // Dependencies
-const mathLibrary = require('./lib/math');
-const quotesLibrary = require('./lib/quotes');
+const mathLibrary = require('./lib/mathRandom');
+const quotesLibrary = require('./lib/qoute');
 
 // App object - Module scaffolding
 const app = {};

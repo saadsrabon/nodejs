@@ -6,4 +6,4 @@ const os = require('os');
 
 const user = ('OS Type:', os.totalmem()	);
 
-console.log(user);
+console.log(user);///memory

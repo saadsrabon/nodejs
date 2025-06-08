@@ -32,4 +32,41 @@ function winner(ncp, mango) {
     return "mango is greater than ncp";
   }
 }
-console.log(winner(ncp, mango)); // mango is greater than ncp
+console.log(winner(ncp, mango)); // m
+// 
+// 
+// consango is greater than ncp
+const numbers = [1, 2, 3, 4, 5];
+
+function sumArrayAndEvenOdd(arr) {
+    const evenAray = [];
+    const oddArray = [];
+    let sum = 0;
+    for(const num of numbers)
+    {
+        if (num % 2 === 0) {
+            evenAray.push(num);
+        } else {
+            oddArray.push(num);
+        }
+        sum += num;
+    }
+    return {
+        evenAray,
+        oddArray,
+        sum
+    };
+}
+
+console.log(sumArrayAndEvenOdd(numbers)); // { evenAray: [ 2, 4 ], oddArray: [ 1, 3, 5 ], sum: 15 }
+
+// file name
+const result  = numbers.reduce((acc, num) => {
+    if (num % 2 === 0) {
+        acc.evenAray.push(num);
+    } else {
+        acc.oddArray.push(num);
+    }
+    acc.sum += num;
+    return acc;
+}, { evenAray: [], oddArray: [], sum: 0 });
